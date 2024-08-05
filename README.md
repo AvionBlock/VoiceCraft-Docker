@@ -1,0 +1,2 @@
+# VoiceCraft-MCBE_Proximity_Chat_Docker
+Docker script for VoiceCraft-MCBE_Proximity_Chat
