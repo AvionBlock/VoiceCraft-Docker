@@ -14,7 +14,7 @@ You should be able to run with:
 ```bash
 docker run -d -p 9050:9050 --name voicecraft_server sinevector241/voicecraft:latest
 # OR
-docker run -d -p 9050:9050 --name voicecraft_server ghcr.io/SineVector241/voicecraft:latest
+docker run -d -p 9050:9050 --name voicecraft_server ghcr.io/sinevector241/voicecraft:latest
 ```
 
 If you need to edit the config, then you can copy the config file to your local machine, edit it, and then upload it again:
