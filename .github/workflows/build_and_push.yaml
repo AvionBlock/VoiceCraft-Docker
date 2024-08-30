@@ -12,8 +12,12 @@ jobs:
       - name: Checkout target repo
         uses: actions/checkout@v4
 
-      - id: RepoOwnerToLowerCase
-        run: INPUT=${{ github.repository_owner }} echo "::set-output name=repoOwner::${INPUT,,}"
+      - name: Setting global variables
+        uses: actions/github-script@v6
+        id: RepoOwnerToLowerCase
+        with:
+          script: |
+            core.setOutput('repoOwner', '${{ github.repository_owner }}'.toLowerCase().replaceAll(/[/.]/g, '-').trim('-'));
 
       - name: Get latest VoiceCraft version
         id: voicecraft
