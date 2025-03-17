@@ -1,6 +1,6 @@
-# VoiceCraft-MCBE_Proximity_Chat_Docker
+# VoiceCraft-Docker
 
-A repository with files to turn [VoiceCraft-MCBE_Proximity_Chat](https://github.com/SineVector241/VoiceCraft-MCBE_Proximity_Chat) into an Docker Image.
+A repository with files to turn [VoiceCraft](https://github.com/AvionBlock/VoiceCraft) into an Docker Image.
 
 The files are initially made by [Miniontoby](https://github.com/Miniontoby).
 Miniontoby will try to keep this repo and the contents up-to-date.
@@ -14,7 +14,7 @@ You should be able to run with:
 ```bash
 docker run -d -p 9050:9050 --name voicecraft_server sinevector241/voicecraft:latest
 # OR
-docker run -d -p 9050:9050 --name voicecraft_server ghcr.io/sinevector241/voicecraft:latest
+docker run -d -p 9050:9050 --name voicecraft_server ghcr.io/avionblock/voicecraft:latest
 ```
 
 If you need to edit the config, then you can copy the config file to your local machine, edit it, and then upload it again:
@@ -50,8 +50,8 @@ In order to build
 
 To download these file, I recommend using git:
 ```bash
-git clone https://github.com/SineVector241/VoiceCraft-MCBE_Proximity_Chat_Docker.git
-cd VoiceCraft-MCBE_Proximity_Chat_Docker
+git clone https://github.com/AvionBlock/VoiceCraft-Docker.git
+cd VoiceCraft-Docker
 ```
 
 
@@ -85,7 +85,7 @@ And again, if you for some reason need to use the `host` network mode, run `make
 
 When this docker repo is updated (which probably will never happen...), follow these instructions to get your clone up-to-date.
 
-When you downloaded using git, run these from within the `VoiceCraft-MCBE_Proximity_Chat_Docker` folder:
+When you downloaded using git, run these from within the `VoiceCraft-Docker` folder:
 ```bash
 git pull
 make build
