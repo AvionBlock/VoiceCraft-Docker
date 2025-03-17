@@ -28,7 +28,7 @@ jobs:
         id: voicecraft
         uses: pozetroninc/github-action-get-latest-release@master
         with:
-          repository: SineVector241/VoiceCraft-MCBE_Proximity_Chat
+          repository: AvionBlock/VoiceCraft
           excludes: prerelease, draft
           token: ${{ secrets.GITHUB_TOKEN }}
 
