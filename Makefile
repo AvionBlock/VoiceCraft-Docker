@@ -4,7 +4,7 @@ build_network:
 	docker build -t voicecraft . --network host
 
 run: build
-	docker run -d -p 9050:9050/tcp -p 9050:9050/udp --name voicecraft_server voicecraft
+	docker run -d -p 9050:9050 -p 9051:9051/tcp --name voicecraft_server voicecraft
 run_network: build_network
 	docker run -d --network host --name voicecraft_server voicecraft 
 

@@ -12,9 +12,9 @@ The images should be automatically be builded and pushed to the hub.docker.com a
 
 You should be able to run with:
 ```bash
-docker run -d -p 9050:9050 --name voicecraft_server sinevector241/voicecraft:latest
+docker run -d -p 9050:9050 -p 9051:9051/tcp --name voicecraft_server sinevector241/voicecraft:latest
 # OR
-docker run -d -p 9050:9050 --name voicecraft_server ghcr.io/avionblock/voicecraft:latest
+docker run -d -p 9050:9050 -p 9051:9051/tcp --name voicecraft_server ghcr.io/avionblock/voicecraft:latest
 ```
 
 If you need to edit the config, then you can copy the config file to your local machine, edit it, and then upload it again:
